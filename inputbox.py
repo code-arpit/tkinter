@@ -7,12 +7,12 @@ entry_.pack()
 entry_.insert(0, "Enter your name: ")
 
 def myClick():
-    mylabel = Label(root , text =entry_.get())
+    hello = "Hello " + entry_.get()
+    mylabel = Label(root , text =hello)
     mylabel.pack()
 
-mybutton = Button(root, text="Enter your name", padx=50, pady=20, command=myClick)
+mybutton = Button(root, text="Submit", padx=50, pady=20, command=myClick)
 mybutton.pack()
-
 
 
 root.mainloop()
